@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.button_container {
+    background-color: #2c2c2c;
+    color: white;
+    clip-path: polygon(
+        0% 0%,
+        75% 0%,
+        100% 100%,
+        0% 100%
+    );
+    height: 100%;
+    width: 300px;
+    box-shadow: inset 5px 5px 10px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    position: fixed;
+    z-index: 2;
+}
+
+.button_container button {
+    width: 120px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #0084ff;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0 0 5px #002344;
+}
+
+.button_container h2 {
+    color: #ffffff;
+    text-shadow: 0 0 10px #c5c5c5;
+    margin-bottom: 20px;
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: #2c2c2c;
+    box-shadow: inset -5px 5px 10px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.top button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #808080;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0 0 5px #1d1d1d;
+    margin-right: 40px;
+}
+
+button {
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>X O Game</title>
+        <link rel="stylesheet" href="/static/game/game_offline.css" />
+    </head>
+    <body>
+        <div class="top">
+            <button>×</button>
+            <h3>Offline Game</h3>
+        </div>
+
+        <div class="game_container">
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square1"
+            ></div>
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square2"
+            ></div>
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square3"
+            ></div>
+
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square4"
+            ></div>
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square5"
+            ></div>
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square6"
+            ></div>
+
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square7"
+            ></div>
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square8"
+            ></div>
+            <div
+                onclick="squares_func(this)"
+                class="squares"
+                id="square9"
+            ></div>
+        </div>
+
+        <div class="details">
+            <div class="score">
+                <div class="player_score">
+                    <h4 id="player_name1">YOU</h4>
+                    <hr />
+                    <span id="player_score">0</span>
+                </div>
+                <div class="draw_score">
+                    <h4>DRAW</h4>
+                    <hr />
+                    <span id="draw_score">0</span>
+                </div>
+                <div class="ai_score">
+                    <h4 id="player_name2">AI</h4>
+                    <hr />
+                    <span id="ai_score">0</span>
+                </div>
+            </div>
+            <div class="play_cont">
+                <div class="player">
+                    <h4>player</h4>
+                    <hr />
+                    <span id="player">YOU</span>
+                </div>
+                <div class="symbol">
+                    <h4>symbol</h4>
+                    <hr />
+                    <span id="symbol">X</span>
+                </div>
+            </div>
+            <div class="kind_cont">
+                <div class="kind">
+                    <h4>Play with</h4>
+                    <select id="kind_select">
+                        <option value="friend">Friend</option>
+                        <option value="ai">AI</option>
+                    </select>
+                </div>
+                <button onclick="reset_score()">Restart</button>
+            </div>
+        </div>
+        <script src="/static/game/game_offline.js"></script>
+    </body>
+</html>
